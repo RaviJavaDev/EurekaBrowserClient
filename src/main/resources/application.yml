@@ -1,0 +1,15 @@
+spring:
+ application:
+  name: StoreLocator
+
+server:
+ port: 9083
+
+eureka:
+ instance:
+  preferred-ip-address: true
+  lease-renewal-interval-in-seconds: 10000
+  lease-expiration-interval-in-seconds: 20
+ client:
+  service-url:
+   defaultZone: http://localhost:10080/eureka
